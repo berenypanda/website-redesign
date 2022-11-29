@@ -1,0 +1,57 @@
+/*
+    Created by: Berenshia Apunda - 1001745459
+    Project: Website Redesign
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400&family=Playfair+Display&display=swap');
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+
+:root {
+    /* Grid */
+
+    --grid-width: calc(100% / 12);
+    --col-1: calc(var(--grid-width) * 1);
+    --col-2: calc(var(--grid-width) * 2);
+    --col-3: calc(var(--grid-width) * 3);
+    --col-4: calc(var(--grid-width) * 4);
+    --col-5: calc(var(--grid-width) * 5);
+    --col-6: calc(var(--grid-width) * 6);
+    --col-7: calc(var(--grid-width) * 7);
+    --col-8: calc(var(--grid-width) * 8);
+    --col-9: calc(var(--grid-width) * 9);
+    --col-10: calc(var(--grid-width) * 10);
+    --col-11: calc(var(--grid-width) * 11);
+    --col-12: calc(var(--grid-width) * 12);
+
+    /* Branding */
+    --primary: 		hsl(151, 93%, 22%);
+    --primary-hover: 	hsl(151, 93%, 32%);
+    --secondary: hsl(28, 42%, 94%);
+    --tertiary: hsl(16, 87%, 62%);
+    --tertiary-hover: hsl(16, 87%, 32%);
+    --font-color: #140b01;
+
+    --gray-0: #222222;
+    --gray-1: #666666;
+    --gray-2: #999999;
+    --gray-3: #dadada;
+
+    --white: white;
+    --red: hsl(352, 73% , 40%);
+    --red-hover: hsl(352, 73% , 20%);
+
+
+    /* Typography */
+    --base-font-size: 20px;
+    --base-scale: 1.25;
+    --base-line-height: calc(1em * var(--base-scale));
+    --h4-font-size: 1rem;
+    --h3-font-size: calc(1rem * var(--base-scale));
+    --h2-font-size: calc(1rem * var(--base-scale) * var(--base-scale));
+    --h1-font-size: calc(1rem * var(--base-scale) * var(--base-scale) * var(--base-scale));
+
+    /* Other */
+    --table-padding: 1.618rem;
+
+}
