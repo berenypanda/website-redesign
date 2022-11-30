@@ -55,3 +55,695 @@
     --table-padding: 1.618rem;
 
 }
+
+/* Body Styles */
+
+* {
+    color: var(--font-color);
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--primary);
+}
+
+#wrapper {
+    background-color: var(--secondary);
+}
+/* End of Body Styles */
+
+
+/* Grid System */
+.container-fluid, 
+.container {
+
+    width: 100%;
+    padding-left: 1rem;
+    padding-righT: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.25rem;
+}
+
+@media screen and (min-width: 576px){
+    .container {max-width:576px; }
+    .lorem-articles {
+        display:flex;
+        flex-flow:column wrap;
+        align-content:center;
+        justify-content:center;
+    }
+    .md-second-row {
+        display:flex;
+    }
+    .md-third-row {
+        display:flex;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .container {max-width:768px; }
+    
+    .lg-second-row {
+        display:flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+    }
+    .md-second-row {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+    }
+    }
+
+@media screen and (min-width: 992px){
+    .container {max-width:992px; }
+}
+
+@media screen and (min-width: 1200px){
+    .container {max-width:1200px; }
+}
+
+.row {
+    flex: 0 0 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    row-gap: 1rem;
+}
+
+.column {
+    flex: 0 0 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content:space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.mult-column {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+}
+
+[class^="col-"] {
+    padding: 0 1rem;
+    width: 100%;
+    max-width: 100%;
+}
+
+.col-xs-1 {
+    flex: 0 0 var(--col-1);
+    max-width: var(--col-1);
+   
+}
+
+.col-xs-2 {
+    flex: 0 0 var(--col-2);
+    max-width: var(--col-2);
+    
+}
+
+.col-xs-3 {
+    flex: 0 0 var(--col-3);
+    max-width: var(--col-3);
+    
+}
+
+.col-xs-4 {
+    flex: 0 0 var(--col-4);
+    max-width: var(--col-4);
+    
+}
+
+.col-xs-5{
+    flex: 0 0 var(--col-5);
+    max-width: var(--col-5);
+ 
+}
+
+.col-xs-6 {
+    flex: 0 0 var(--col-6);
+    max-width: var(--col-6);
+    
+}
+
+.col-xs-7 {
+    flex: 0 0 var(--col-7);
+    max-width: var(--col-7);
+    
+}
+
+.col-xs-8 {
+    flex: 0 0 var(--col-8);
+    max-width: var(--col-8);
+    
+}
+
+.col-xs-9 {
+    flex: 0 0 var(--col-9);
+    max-width: var(--col-9);
+    
+}
+
+.col-xs-10 {
+    flex: 0 0 var(--col-10);
+    max-width: var(--col-10);
+    
+}
+
+.col-xs-11 {
+    flex: 0 0 var(--col-11);
+    max-width: var(--col-11);
+    
+}
+
+.col-xs-12 {
+    flex: 0 0 var(--col-12);
+    max-width: var(--col-12);
+    
+}
+/* Styles for 'col-sm-...' grid */
+
+
+@media screen and (min-width: 576px){
+    .col-sm-1 {
+        flex: 0 0 var(--col-1);
+        max-width: var(--col-1);
+       
+    }
+    
+    .col-sm-2 {
+        flex: 0 0 var(--col-2);
+        max-width: var(--col-2);
+       
+    }
+    
+    .col-sm-3 {
+        flex: 0 0 var(--col-3);
+        max-width: var(--col-3);
+        
+    }
+    
+    .col-sm-4 {
+        flex: 0 0 var(--col-4);
+        max-width: var(--col-4);
+        
+    }
+    
+    .col-sm-5{
+        flex: 0 0 var(--col-5);
+        max-width: var(--col-5);
+       
+    }
+    
+    .col-sm-6 {
+        flex: 0 0 var(--col-6);
+        max-width: var(--col-6);
+        
+    }
+
+    .col-sm-7 {
+        flex: 0 0 var(--col-7);
+        max-width: var(--col-7);
+        
+    }
+
+    .col-sm-8 {
+        flex: 0 0 var(--col-8);
+        max-width: var(--col-8);
+        
+    }
+
+    .col-sm-9 {
+        flex: 0 0 var(--col-9);
+        max-width: var(--col-9);
+        
+    }
+
+    .col-sm-10 {
+        flex: 0 0 var(--col-10);
+        max-width: var(--col-10);
+        
+    }
+
+    .col-sm-11 {
+        flex: 0 0 var(--col-11);
+        max-width: var(--col-11);
+        
+    }
+
+    .col-sm-12 {
+        flex: 0 0 var(--col-12);
+        max-width: var(--col-12);
+        
+    }
+}
+
+/* Styles for 'col-md-...' grid */
+@media screen and (min-width: 768px){
+    .col-md-1 {
+        flex: 0 0 var(--col-1);
+        max-width: var(--col-1);
+       
+    }
+    
+    .col-md-2 {
+        flex: 0 0 var(--col-2);
+        max-width: var(--col-2);
+       
+    }
+    
+    .col-md-3 {
+        flex: 0 0 var(--col-3);
+        max-width: var(--col-3);
+        
+    }
+    
+    .col-md-4 {
+        flex: 0 0 var(--col-4);
+        max-width: var(--col-4);
+        
+    }
+    
+    .col-md-5{
+        flex: 0 0 var(--col-5);
+        max-width: var(--col-5);
+       
+    }
+    
+    .col-md-6 {
+        flex: 0 0 var(--col-6);
+        max-width: var(--col-6);
+        
+    }
+
+    .col-md-7 {
+        flex: 0 0 var(--col-7);
+        max-width: var(--col-7);
+        
+    }
+
+    .col-md-8 {
+        flex: 0 0 var(--col-8);
+        max-width: var(--col-8);
+        
+    }
+
+    .col-md-9 {
+        flex: 0 0 var(--col-9);
+        max-width: var(--col-9);
+        
+    }
+
+    .col-md-10 {
+        flex: 0 0 var(--col-10);
+        max-width: var(--col-10);
+        
+    }
+
+    .col-md-11 {
+        flex: 0 0 var(--col-11);
+        max-width: var(--col-11);
+        
+    }
+
+    .col-md-12 {
+        flex: 0 0 var(--col-12);
+        max-width: var(--col-12);
+        
+    }
+}
+
+/* Styles for 'col-lg-...' grid */
+@media screen and (min-width: 992px){
+    .col-lg-1 {
+        flex: 0 0 var(--col-1);
+        max-width: var(--col-1);
+       
+    }
+    
+    .col-lg-2 {
+        flex: 0 0 var(--col-2);
+        max-width: var(--col-2);
+       
+    }
+    
+    .col-lg-3 {
+        flex: 0 0 var(--col-3);
+        max-width: var(--col-3);
+        
+    }
+    
+    .col-lg-4 {
+        flex: 0 0 var(--col-4);
+        max-width: var(--col-4);
+        
+    }
+    
+    .col-lg-5{
+        flex: 0 0 var(--col-5);
+        max-width: var(--col-5);
+       
+    }
+    
+    .col-lg-6 {
+        flex: 0 0 var(--col-6);
+        max-width: var(--col-6);
+        
+    }
+
+    .col-lg-7 {
+        flex: 0 0 var(--col-7);
+        max-width: var(--col-7);
+        
+    }
+
+    .col-lg-8 {
+        flex: 0 0 var(--col-8);
+        max-width: var(--col-8);
+        
+    }
+
+    .col-lg-9 {
+        flex: 0 0 var(--col-9);
+        max-width: var(--col-9);
+        
+    }
+
+    .col-lg-10 {
+        flex: 0 0 var(--col-10);
+        max-width: var(--col-10);
+        
+    }
+
+    .col-lg-11 {
+        flex: 0 0 var(--col-11);
+        max-width: var(--col-11);
+        
+    }
+
+    .col-lg-12 {
+        flex: 0 0 var(--col-12);
+        max-width: var(--col-12);
+        
+    }
+}
+
+/* Styles for 'col-xl-...' grid */
+@media screen and (min-width: 1200px){
+    .col-xl-1 {
+        flex: 0 0 var(--col-1);
+        max-width: var(--col-1);
+       
+    }
+    
+    .col-xl-2 {
+        flex: 0 0 var(--col-2);
+        max-width: var(--col-2);
+       
+    }
+    
+    .col-xl-3 {
+        flex: 0 0 var(--col-3);
+        max-width: var(--col-3);
+        
+    }
+    
+    .col-xl-4 {
+        flex: 0 0 var(--col-4);
+        max-width: var(--col-4);
+        
+    }
+    
+    .col-xl-5{
+        flex: 0 0 var(--col-5);
+        max-width: var(--col-5);
+       
+    }
+    
+    .col-xl-6 {
+        flex: 0 0 var(--col-6);
+        max-width: var(--col-6);
+        
+    }
+
+    .col-xl-7 {
+        flex: 0 0 var(--col-7);
+        max-width: var(--col-7);
+        
+    }
+
+    .col-xl-8 {
+        flex: 0 0 var(--col-8);
+        max-width: var(--col-8);
+        
+    }
+
+    .col-xl-9 {
+        flex: 0 0 var(--col-9);
+        max-width: var(--col-9);
+        
+    }
+
+    .col-xl-10 {
+        flex: 0 0 var(--col-10);
+        max-width: var(--col-10);
+        
+    }
+
+    .col-xl-11 {
+        flex: 0 0 var(--col-11);
+        max-width: var(--col-11);
+        
+    }
+
+    .col-xl-12 {
+        flex: 0 0 var(--col-12);
+        max-width: var(--col-12);
+        
+    }
+
+
+}
+
+/*End of Grid System*/
+/* Navigation Styles */
+
+header {
+    display: flex;
+}
+
+.navbar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-start;
+}
+
+.navbar-brand {
+    display: block;
+    overflow: hidden;
+    background: url(../images/logo.svg) no-repeat center/contain transparent;
+    width: 10rem;
+    height: 4rem;
+    text-indent: -9999px;
+    text-decoration: none;
+}
+
+.navbar-toggler {
+    background-color: var(--primary);
+    border: 0 none;
+    color: white;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.navigation {
+    flex: 0 0 100%;
+}
+
+.navigation.collapse .navbar-nav {
+    display: none;
+}
+
+.navbar-nav {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar-nav li > a {
+    color: var(--primary);
+    display: block;
+    overflow: hidden;
+    padding: calc((1em / var(--base-scale)) / var(--base-scale)) calc(1em / var(--base-scale));
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+.navbar-nav li.active > a {
+    border-bottom-color: var(--primary);
+}
+
+.navbar-nav li > a:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.dropdown-toggle::after {
+    content: "\f0d8";
+    font-family: "FontAwesome";
+    font-weight: 400;
+    margin-left: var(--base-line-height);
+}
+
+.collapse .dropdown-toggle::after {
+    content: "\f0d7";
+}
+
+.dropdown.collapse .dropdown-menu {
+    display: none;
+}
+
+.dropdown-menu {
+    background-color: var(--gray-2);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    z-index: 1;
+}
+
+.dropdown-menu > a {
+    flex: 1 0 100%;
+    color: var(--white);
+    padding: calc((1em / var(--base-scale)) / var(--base-scale)) calc(1em / var(--base-scale));
+    text-decoration: none;
+}
+
+.dropdown-menu > a:hover {
+    background-color: var(--gray-1);
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+@media screen and (min-width: 768px){
+    .navbar-toggler {
+        display: none;
+    }
+
+    .navigation {
+        flex: 0 0 auto;
+    }
+
+    .navigation.collapse .navbar-nav,
+    .navbar-nav {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        align-items: baseline;
+        align-content: center;
+    }
+
+    .dropdown-menu {
+        position: absolute;
+    }
+}
+/* End of Navigation Styles */
+
+/* Main Section Styles */
+    /*Slogan */
+    .slogan {
+        color: var(--tertiary);
+        font-style: italic;
+        text-align: center;
+    }
+
+    /*Promo */
+    .promo {
+        display:flex;
+        flex-flow: column nowrap;
+        text-align: center;
+        margin-top: 10%
+    }
+    .product-section {
+        text-align:center;
+        margin-top:10%;
+}
+    .cta-section {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+
+/* End of Main Section Styles */
+
+/* Button Styles */
+.promo .cta-section > button {
+    background-color: var(--red);
+    border: 1px solid var(--gray-0);
+}
+
+.product-section .cta-section > button {
+    background-color: var(--tertiary);
+}
+/* End of Button Styles */
+
+/*Footer Styles*/
+footer {
+    display:flex;
+    flex-flow: column nowrap;
+    margin: 10% auto;
+    width: 80%;
+}
+footer ul {
+    list-style-type: none;
+}
+
+footer ul > li > a {
+    text-decoration: none;
+}
+
+.bottom-nav {
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: 10%;
+}
+
+.bottom-nav li {
+    width:30%;
+}
+
+.copyright {
+    margin-top: 10%;
+    font-style: italic;
+    text-align: center;
+}
+/* Footer Styles */
