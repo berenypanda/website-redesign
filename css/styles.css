@@ -819,11 +819,73 @@ ul.contact  i {
 
 /* About Page Styles */
 
+.page-title {
+    margin-top: 10%;
+    text-align: center;
+}
+
 .blurb {
+    margin-top: 10%;
     display: flex;
     flex-flow: column nowrap;
     height: 20vh;
     justify-content: space-between;
+    text-align: center;
+}
+.team {margin-top: 10%;}
+.member {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.member-info {
+    margin-left: 5%;
+}
+
+.our-story > h3 {
+    text-align: center;
+    margin-top: 10%
+}
+
+.our-story ul {
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 80%;
+    height: 50vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    list-style-type: disc;
 }
 
 /* End of About Page Styles */
+
+/* Categories Page Styles */
+
+.category-section {
+    margin-top: 10%;
+    display:flex;
+    flex-flow: column nowrap;
+    align-items: center;
+   
+}
+
+.category {
+    margin-top: 5%;
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    border-bottom: 2px solid var(--font-color);
+}
+
+.category-desc {
+    margin-left: 10%;
+}
+
+.category-desc ul {
+    margin-bottom: 5%;
+}
+
+/* End of Categories Page Styles */
