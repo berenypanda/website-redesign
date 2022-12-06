@@ -1002,3 +1002,53 @@ input:invalid, input:focus:invalid {
 /* End of Forms*/
 /* End of Form Styles */
 
+/* Error Page Styles */
+
+.error-page.box {
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 5%;
+   
+}
+
+.error-page.box.fourhundred::before {
+    content: "";
+      background-image: url(../images/error400.jpg);
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.5;
+}
+
+.error-page.box.fivehundred::before {
+    content: "";
+      background-image: url(../images/error500.jpg);
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.5;
+}
+
+.error-page.header, .error-page.box p, .error-page.box button {
+    position: relative;
+    font-size: 250%;
+    font-weight: bold;
+    margin: 5%;
+}
+
+.error-page.header, .error-page.box p {
+    color: var(--secondary);
+    text-shadow: 2px 2px 2px var(--font-color);
+}
+
+/* End of Error Page Styles */
