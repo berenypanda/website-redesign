@@ -1089,9 +1089,17 @@ input:invalid, input:focus:invalid {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
-    height: 90vh;
+    height: 250vh;
     padding: 10%;
 
+}
+
+.services-list img {
+    height: 50%;
+    object-fit: scale-down;
+    margin-bottom: 5%;
+    align-self: flex-start;
+    padding: 0;
 }
 
     /*Individual Service Page*/
