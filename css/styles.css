@@ -1054,6 +1054,17 @@ input:invalid, input:focus:invalid {
 /* End of Error Page Styles */
 
 /* Services Page Styles */
+
+
+.services-list {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    height: 90vh;
+    padding: 10%;
+
+}
+
     /*Individual Service Page*/
 .interest-form {
     height: 150vh;
