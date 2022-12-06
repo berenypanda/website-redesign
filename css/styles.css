@@ -842,8 +842,17 @@ ul.contact  i {
     justify-content: space-between;
     text-align: center;
 }
-.team {margin-top: 10%;}
+.team {
+    margin-top: 10%;
+margin-left: 5%;}
+.team img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    display: inline-block;
+}
 .member {
+    margin-top: 5%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -853,6 +862,12 @@ ul.contact  i {
     margin-left: 5%;
 }
 
+.our-story {
+    height: 150vh;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
 .our-story > h3 {
     text-align: center;
     margin-top: 10%
@@ -860,12 +875,12 @@ ul.contact  i {
 
 .our-story ul {
     margin-top: 5%;
-    margin-left: 5%;
+    margin-left: 10%;
     width: 80%;
-    height: 50vh;
+    height: 150vh;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
     list-style-type: disc;
 }
 
