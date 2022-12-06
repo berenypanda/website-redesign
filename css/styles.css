@@ -1121,10 +1121,18 @@ input:invalid, input:focus:invalid {
 .clearance-section-category {
     margin-top: 10%;
 }
+.clearance-section img {
+    height: auto;
+    object-fit: cover;
+}
 .clearance-section-item {
     display: flex;
     justify-content: space-between;
     padding: 5%;
+}
+
+.clearance-section ul {
+    margin-left: 5%;
 }
 
 .sale-marker {
