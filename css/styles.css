@@ -1144,9 +1144,18 @@ input:invalid, input:focus:invalid {
 
 /* Delivery Page Styles */
 
+.delivery-details img {
+    height: 200px;
+    object-fit: cover;
+}
+
 .delivery-details {
     margin-top:10%;
     margin-left: 10%;
+}
+
+.delivery-details h3 {
+    margin-top: 10%;
 }
 
 .delivery-details ul, .delivery-details li {
