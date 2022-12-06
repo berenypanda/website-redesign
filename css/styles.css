@@ -1107,3 +1107,21 @@ input:invalid, input:focus:invalid {
 
 /* End of Clearance Page Styles */
 
+/* Delivery Page Styles */
+
+.delivery-details {
+    margin-top:10%;
+    margin-left: 10%;
+}
+
+.delivery-details ul, .delivery-details li {
+    padding: 5%;
+}
+
+.delivery-details a:hover {
+    font-weight:bold;
+    text-decoration: none;
+}
+
+
+/* End of Delivery Page Styles */
