@@ -895,7 +895,11 @@ margin-left: 5%;}
     align-items: center;
    
 }
-
+.category-section img {
+    width: var(--col-3);
+    height: auto;
+    object-fit:scale-down;
+}
 .category {
     margin-top: 5%;
     width: 80%;
