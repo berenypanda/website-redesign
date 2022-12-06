@@ -922,11 +922,19 @@ margin-left: 5%;}
 /* Individual Product Page Styles */
 
 .ind-prod {
-    height: 60vh;
-    margin-left: 5%;
+    height: 100vh;
+    margin-left: 10%;
     display:flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     justify-content: space-around;
+}
+
+.ind-prod img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    align-self: center;
+    margin-top: 5%;
 }
 /* End of Individual Product Page Styles */
 
