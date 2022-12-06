@@ -19,11 +19,23 @@
                 </button>
                 <div class="navigation collapse" id="navigation">
                     <ul class="navbar-nav">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Products</a></li>
-                        <li><a href="#">Delivery</a></li>
-                        <li><a href="#">Classes</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li class="dropdown collapse">
+                            <a class="dropdown-toggle" href="#">Products</a>
+                            <div class="dropdown-menu">
+                                <a href="pages/clearance.html">Clearance</a>
+                                <a href="pages/categories.html">Browse All Products</a>
+                                <a href="pages/individual-product.html">Individual Product</a>
+                            </div>
+                        </li>
+                        <li><a href="pages/delivery.html">Delivery</a></li>
+                        <li class="dropdown collapse">
+                            <a class="dropdown-toggle" href="#">Services</a>
+                            <div class="dropdown-menu">
+                                <a href="pages/individual-service.html">Individual Service</a>
+                            </div>
+                        </li>
+                        <li><a href="pages/contact.html">Contact</a></li>
                     </ul>
                 </div>
             </nav>
@@ -53,10 +65,10 @@
         <footer>
             <img src="#">
             <ul class="contact">
-                <li><span class="#"></span><a href="#">1212 Municipal Ave, Plano, TX 75074</a></li>
-                <li><span class="#"></span><a href="#">Mon - Fri: 7:30 A.M. -5:00 P.M.</a></li>
-                <li><span class="#"></span><a href="#">123-456-7890</a></li>
-                <li><span class="#"></span><a href="#">user@email.com</a></li>
+                <li><span><i class="fa-solid fa-location-dot"></i></span><a href="#">1212 Municipal Ave, Plano, TX 75074</a></li>
+                <li><span><i class="fa-solid fa-clock"></i></span><a href="#">Mon - Fri: 7:30 A.M. -5:00 P.M.</a></li>
+                <li><span><i class="fa-solid fa-phone"></i></span><a href="#">123-456-7890</a></li>
+                <li><span><i class="fa-solid fa-envelope"></i></span><a href="#">user@email.com</a></li>
             </ul>
             <ul class="bottom-nav">
                 <li><a href="#">Home</a></li>
@@ -71,8 +83,8 @@
                 <p>Copyright © 2022 Dallas Stone Supply and Wholesale Nursery - Outdoor Warehouse Supply</p>
             </div>
             <div class="social-media">
-                <i></i>
-                <i></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
             </div>
         </footer>
     </div>

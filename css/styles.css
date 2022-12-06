@@ -27,7 +27,8 @@
     /* Branding */
     --primary: 		hsl(151, 93%, 22%);
     --primary-hover: 	hsl(151, 93%, 32%);
-    --secondary: hsl(28, 42%, 94%);
+    --secondary: #E5F6DF;
+    --secondary-hover: #c7f7b5;
     --tertiary: hsl(16, 87%, 62%);
     --tertiary-hover: hsl(16, 87%, 32%);
     --font-color: #140b01;
@@ -547,6 +548,7 @@ header {
     justify-content: space-between;
     align-items: center;
     align-content: flex-start;
+    background-color: var(--primary);
 }
 
 .navbar-brand {
@@ -562,7 +564,7 @@ header {
 .navbar-toggler {
     background-color: var(--primary);
     border: 0 none;
-    color: white;
+    color: var(--secondary);
     width: 2rem;
     height: 2rem;
     display: flex;
@@ -586,7 +588,7 @@ header {
 }
 
 .navbar-nav li > a {
-    color: var(--primary);
+    color: var(--white);
     display: block;
     overflow: hidden;
     padding: calc((1em / var(--base-scale)) / var(--base-scale)) calc(1em / var(--base-scale));
@@ -619,7 +621,7 @@ header {
 }
 
 .dropdown-menu {
-    background-color: var(--gray-2);
+    background-color: var(--primary-hover);
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
@@ -630,13 +632,14 @@ header {
 
 .dropdown-menu > a {
     flex: 1 0 100%;
-    color: var(--white);
+    color: var(--secondary);
     padding: calc((1em / var(--base-scale)) / var(--base-scale)) calc(1em / var(--base-scale));
     text-decoration: none;
 }
 
 .dropdown-menu > a:hover {
-    background-color: var(--gray-1);
+    background-color: var(--secondary-hover);
+    color: var(--font-color);
 }
 
 .sr-only {
@@ -678,9 +681,10 @@ header {
 /* Main Section Styles */
     /*Slogan */
     .slogan {
-        color: var(--tertiary);
+        color: var(--font-color);
         font-style: italic;
         text-align: center;
+        margin-top: 5%;
     }
 
     /*Promo */
@@ -688,11 +692,15 @@ header {
         display:flex;
         flex-flow: column nowrap;
         text-align: center;
-        margin-top: 10%
+        margin-top: 10%;
+        justify-content: space-between;
     }
     .product-section {
         text-align:center;
         margin-top:10%;
+        height: 80%;
+        display: flex;
+        flex-flow: column nowrap;
 }
     .cta-section {
         display: flex;
@@ -709,10 +717,12 @@ header {
 .promo .cta-section > button {
     background-color: var(--red);
     border: 1px solid var(--gray-0);
+    margin-top: 3vh;
 }
 
 .product-section .cta-section > button {
     background-color: var(--tertiary);
+    margin-top: 3vh;
 }
 /* End of Button Styles */
 
@@ -720,25 +730,61 @@ header {
 footer {
     display:flex;
     flex-flow: column nowrap;
-    margin: 10% auto;
+    background-color: var(--primary);
+    margin-top: 10%;
+    color: var(--secondary);
+}
+
+footer ul, footer div, footer img {
+    margin: 0 auto;
     width: 80%;
 }
+
+footer img {margin-top: 5%;}
+
 footer ul {
     list-style-type: none;
 }
 
 footer ul > li > a {
     text-decoration: none;
+    color: var(--secondary);
+}
+
+footer ul.contact {
+    height: 30vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+
+ul.contact  i {
+    margin-right: 5%;
+    color: var(--secondary);
 }
 
 .bottom-nav {
+    height: 30vh;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
+    justify-content: space-around;
     margin-top: 10%;
 }
 
 .bottom-nav li {
     width:30%;
+    margin-top: 2%;
+}
+
+.bottom-nav li a {
+    text-decoration:underline;
+}
+
+.bottom-nav li a:hover {
+    color: var(--secondary-hover);
+    text-decoration: none;
+    
 }
 
 .copyright {
@@ -746,4 +792,18 @@ footer ul > li > a {
     font-style: italic;
     text-align: center;
 }
+
+.copyright p {color: var(--secondary);}
+
+.social-media {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.social-media i {
+    color: var(--secondary);
+}
+
 /* Footer Styles */
