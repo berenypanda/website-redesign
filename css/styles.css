@@ -976,6 +976,7 @@ fieldset h3, fieldset label {color: var(--secondary);}
 .form-group.row {
     display: flex;
     flex-flow: column nowrap;
+    margin: 5%;
 }
 fieldset .form-group:last-of-type {
 	margin-bottom: 0;
@@ -1094,11 +1095,14 @@ input:invalid, input:focus:invalid {
 }
 
     /*Individual Service Page*/
+
+
 .interest-form {
-    height: 150vh;
+    height:max-content;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
+    margin: 5%;
 }
 
 .interest-form form {
@@ -1107,6 +1111,8 @@ input:invalid, input:focus:invalid {
 
 .interest-form img {
     align-self: center;
+    height: 20vh;
+    object-fit: cover;
 }
 
 /* End of Services Page Styles */
