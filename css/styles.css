@@ -815,4 +815,15 @@ ul.contact  i {
     color: var(--secondary);
 }
 
-/* Footer Styles */
+/* End of Footer Styles */
+
+/* About Page Styles */
+
+.blurb {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 20vh;
+    justify-content: space-between;
+}
+
+/* End of About Page Styles */
