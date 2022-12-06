@@ -40,7 +40,60 @@
                 </div>
             </nav>
         </div>
-        <main></main>
+        <main>
+            <div class="page-title">INDIVIDUAL SERVICE</div>
+            <div class="blurb">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, adipisci debitis nemo perferendis rerum aspernatur ut blanditiis culpa, recusandae reprehenderit suscipit, temporibus ipsa laborum accusamus maiores ratione? Quos, perspiciatis aspernatur.</div>
+            <div class="interest-form">
+                <img src="#">
+                <div class="container">
+                    <form method="post" action="contact.php" name="contact">
+                        <fieldset>
+                            <legend><h3>Fill out this interest form below to be contacted with more details.</h3></legend>
+                            <div class="form-group row">
+                                <label for="name" class="col-sm-8 col-form-label">Full Name</label>
+                                <div class="col-sm-8">
+                                    <input type="text" name="firstName" id="firstName" class="form-control" placeholder="John Doe" required />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="email" class="col-sm-8 col-form-label">Email</label>
+                                <div class="col-sm-8">
+                                    <input type="email" name="email" id="email" class="form-control" placeholder="user@domain.com" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="phone" class="col-sm-8 col-form-label">Phone Number</label>
+                                <div class="col-sm-8">
+                                    <input type="tel" name="phone" id="phone" class="form-control"p attern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890"
+                                        />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="reason" class="col-sm-8 col-form-label">What service are you interested in?</label>
+                                <div class="col-sm-8">
+                                    <input type="text" name="reason" id="username" class="form-control" placeholder="Reason" max-length="50"
+                                    />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="message" class="col-sm-8 col-form-label"> OPTIONAL - type a message here.</label>
+                                <div class="col-sm-8">
+                                    <textarea
+                                        name="comments"
+                                        class="form-control"
+                                        placeholder="Add your comments"
+                                        maxlength="200"
+                                    ></textarea>
+                                </div>
+                            </div>
+                            <input type="submit" name="submit" id="submit" value="Submit" class="btn-primary" />
+                        </fieldset>
+                    
+                    </form>
+                </div>
+            </div>
+            
+        </main>
         <footer>
             <img src="../images/logo.png" alt="logo">
             <ul class="contact">
