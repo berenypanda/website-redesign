@@ -542,6 +542,11 @@ header {
     display: flex;
 }
 
+header > img {
+    height: 30vh;
+    width: auto;
+}
+
 .navbar {
     display: flex;
     flex-flow: row wrap;
@@ -740,7 +745,11 @@ footer ul, footer div, footer img {
     width: 80%;
 }
 
-footer img {margin-top: 5%;}
+footer img {
+    margin-top: 5%;
+    height: 30vh;
+    width: auto;
+}
 
 footer ul {
     list-style-type: none;
