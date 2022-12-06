@@ -29,6 +29,7 @@
     --primary-hover: 	hsl(151, 93%, 32%);
     --secondary: #E5F6DF;
     --secondary-hover: #c7f7b5;
+    --background-color: #fff8e7;
     --tertiary: hsl(16, 87%, 62%);
     --tertiary-hover: hsl(16, 87%, 32%);
     --font-color: #140b01;
@@ -70,7 +71,7 @@ body {
 }
 
 #wrapper {
-    background-color: var(--secondary);
+    background-color: var(--background-color);
 }
 /* End of Body Styles */
 
@@ -719,16 +720,24 @@ header > img {
 /* End of Main Section Styles */
 
 /* Button Styles */
+
+.btn-primary {
+    background-color: var(--tertiary);
+    margin-top: 3vh;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--tertiary-hover);
+}
+
 .promo .cta-section > button {
     background-color: var(--red);
     border: 1px solid var(--gray-0);
     margin-top: 3vh;
 }
 
-.product-section .cta-section > button {
-    background-color: var(--tertiary);
-    margin-top: 3vh;
-}
+
 /* End of Button Styles */
 
 /*Footer Styles*/
@@ -896,7 +905,100 @@ ul.contact  i {
     height: 60vh;
     margin-left: 5%;
     display:flex;
-    flex-flow: column nowrap;
+    flex-flow: row nowrap;
     justify-content: space-around;
 }
 /* End of Individual Product Page Styles */
+
+/* Form Styles */
+    /* Contact Page Message Styles */
+    .message {
+        text-align:center;
+    }
+    .message.success {color:green;}
+    .message.fail {color:red;}
+    /* End of Contact Page Message Styles */
+form {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: var(--primary);
+    
+}
+fieldset {
+	padding: 10px; 
+	border: 0px;
+	margin-bottom: var(--base-line-height);
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+    justify-content: center;
+   
+}
+fieldset legend {
+    text-align: center;
+    margin-bottom: 5%;
+}
+fieldset h3 {padding: 10px;}
+
+fieldset h3, fieldset label {color: var(--secondary);}
+
+.form-group {
+	margin-bottom: var(--base-line-height);
+}
+.form-group.row {
+    display: flex;
+    flex-flow: column nowrap;
+}
+fieldset .form-group:last-of-type {
+	margin-bottom: 0;
+}
+.form-group label {
+	font-weight: 400;
+}
+.form-control, .form-check-input {
+	accent-color: var(--secondary);
+}
+input, select, textarea {
+	font-family: inherit;
+	font-size: 1rem;
+	line-height: var(--base-line-height);
+    padding: calc((1em / var(--base-scale)) / var(--base-scale) / var(--base-scale)) calc(1em / var(--base-scale) / var(--base-scale)); 
+	border: 1px solid var(--font-color);
+	color: var(--font-color);
+	background-color: var(--secondary);
+}
+input.form-control {
+	width: 100%;
+	max-width: 100%;
+}
+textarea {
+	width: 100%;
+	max-width: 100%;
+	min-height: calc(4 * var(--base-line-height));
+}
+
+/* Pseudo Selectors */
+
+.form-control:focus {
+	outline: var(--secondary-hover) solid 2px;
+	outline-offset: 2px;
+}
+.form-check-input:checked {
+	box-shadow: 0 0 4px 4px var(--secondary-blurred);
+}
+.form-control:disabled, .form-control:hover:disabled, input:disabled, input:hover:disabled {
+	background-color: var(--gray-3);
+	color: var(--gray-2);
+	cursor: not-allowed;
+}
+input:invalid, input:focus:invalid {
+	/* border-color: red; */
+	box-shadow: 0 0 2px red;
+	outline: red solid 2px;
+	outline-offset: 2px;
+    background-color: var(--red-hover);
+    color: white;
+}
+/* End of Forms*/
+/* End of Form Styles */
+
