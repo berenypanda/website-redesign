@@ -646,6 +646,45 @@ header > img {
         justify-content: space-between;
         min-width: var(--col-10)
     }
+
+    .product-section.mobile-view {
+        display:none;
+    }
+
+    .product-section.large-view {
+        display: flex;
+
+    }
+    .product-section .cta-section {
+        margin-top: 10%;
+    }
+    .product-item.row {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        margin-bottom: 5%;
+    }
+    .product-item {
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .product-item button {
+        padding: 5%;
+        min-width: var(--col-8);
+    }
+    .product-image {
+        width: 200px;
+        height: 200px;
+        background-color: gray;
+        display:flex;
+        justify-content: center;
+    }
+    .product-image p {
+        align-self: center;
+        font-size: 200%;
+        font-weight: bold;
+        color: var(--secondary);
+    }
 }
 
 
