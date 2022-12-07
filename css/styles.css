@@ -9,8 +9,8 @@
 
 :root {
     /* Grid */
-
-    --grid-width: calc(100% / 12);
+    --number-of-columns: 12;
+    --grid-width: calc(100% / var(--number-of-columns));
     --col-1: calc(var(--grid-width) * 1);
     --col-2: calc(var(--grid-width) * 2);
     --col-3: calc(var(--grid-width) * 3);
@@ -72,6 +72,9 @@ body {
 
 #wrapper {
     background-color: var(--background-color);
+    position: relative;
+
+
 }
 /* End of Body Styles */
 
@@ -163,222 +166,171 @@ body {
 
 .col-xs-1 {
     flex: 0 0 var(--col-1);
+    min-width: var(--col-1);
     max-width: var(--col-1);
    
 }
 
 .col-xs-2 {
     flex: 0 0 var(--col-2);
+    min-width: var(--col-2);
     max-width: var(--col-2);
     
 }
 
 .col-xs-3 {
     flex: 0 0 var(--col-3);
+    min-width: var(--col-3);
     max-width: var(--col-3);
     
 }
 
 .col-xs-4 {
     flex: 0 0 var(--col-4);
+    min-width: var(--col-4);
     max-width: var(--col-4);
     
 }
 
 .col-xs-5{
     flex: 0 0 var(--col-5);
+    min-width: var(--col-5);
     max-width: var(--col-5);
  
 }
 
 .col-xs-6 {
     flex: 0 0 var(--col-6);
+    min-width: var(--col-6);
     max-width: var(--col-6);
     
 }
 
 .col-xs-7 {
     flex: 0 0 var(--col-7);
+    min-width: var(--col-7);
     max-width: var(--col-7);
     
 }
 
 .col-xs-8 {
     flex: 0 0 var(--col-8);
+    min-width: var(--col-8);
     max-width: var(--col-8);
     
 }
 
 .col-xs-9 {
     flex: 0 0 var(--col-9);
+    min-width: var(--col-9);
     max-width: var(--col-9);
     
 }
 
 .col-xs-10 {
     flex: 0 0 var(--col-10);
+    min-width: var(--col-10);
     max-width: var(--col-10);
     
 }
 
 .col-xs-11 {
     flex: 0 0 var(--col-11);
+    min-width: var(--col-11);
     max-width: var(--col-11);
     
 }
 
 .col-xs-12 {
     flex: 0 0 var(--col-12);
+    min-width: var(--col-12);
     max-width: var(--col-12);
     
 }
 /* Styles for 'col-sm-...' grid */
 
-
-@media screen and (min-width: 576px){
-    .col-sm-1 {
-        flex: 0 0 var(--col-1);
-        max-width: var(--col-1);
-       
-    }
-    
-    .col-sm-2 {
-        flex: 0 0 var(--col-2);
-        max-width: var(--col-2);
-       
-    }
-    
-    .col-sm-3 {
-        flex: 0 0 var(--col-3);
-        max-width: var(--col-3);
-        
-    }
-    
-    .col-sm-4 {
-        flex: 0 0 var(--col-4);
-        max-width: var(--col-4);
-        
-    }
-    
-    .col-sm-5{
-        flex: 0 0 var(--col-5);
-        max-width: var(--col-5);
-       
-    }
-    
-    .col-sm-6 {
-        flex: 0 0 var(--col-6);
-        max-width: var(--col-6);
-        
-    }
-
-    .col-sm-7 {
-        flex: 0 0 var(--col-7);
-        max-width: var(--col-7);
-        
-    }
-
-    .col-sm-8 {
-        flex: 0 0 var(--col-8);
-        max-width: var(--col-8);
-        
-    }
-
-    .col-sm-9 {
-        flex: 0 0 var(--col-9);
-        max-width: var(--col-9);
-        
-    }
-
-    .col-sm-10 {
-        flex: 0 0 var(--col-10);
-        max-width: var(--col-10);
-        
-    }
-
-    .col-sm-11 {
-        flex: 0 0 var(--col-11);
-        max-width: var(--col-11);
-        
-    }
-
-    .col-sm-12 {
-        flex: 0 0 var(--col-12);
-        max-width: var(--col-12);
-        
-    }
-}
-
 /* Styles for 'col-md-...' grid */
 @media screen and (min-width: 768px){
     .col-md-1 {
         flex: 0 0 var(--col-1);
+        min-width: var(--col-1);
         max-width: var(--col-1);
        
     }
     
     .col-md-2 {
         flex: 0 0 var(--col-2);
+        min-width: var(--col-2);
         max-width: var(--col-2);
        
     }
     
     .col-md-3 {
         flex: 0 0 var(--col-3);
+        min-width: var(--col-3);
         max-width: var(--col-3);
         
     }
     
     .col-md-4 {
         flex: 0 0 var(--col-4);
+        min-width: var(--col-4);
         max-width: var(--col-4);
         
     }
     
     .col-md-5{
         flex: 0 0 var(--col-5);
+        min-width: var(--col-5);
         max-width: var(--col-5);
        
     }
     
     .col-md-6 {
         flex: 0 0 var(--col-6);
+        min-width: var(--col-6);
         max-width: var(--col-6);
         
     }
 
     .col-md-7 {
         flex: 0 0 var(--col-7);
+        min-width: var(--col-7);
         max-width: var(--col-7);
         
     }
 
     .col-md-8 {
         flex: 0 0 var(--col-8);
+        min-width: var(--col-8);
         max-width: var(--col-8);
         
     }
 
     .col-md-9 {
         flex: 0 0 var(--col-9);
+        min-width: var(--col-9);
         max-width: var(--col-9);
         
     }
 
     .col-md-10 {
         flex: 0 0 var(--col-10);
+        min-width: var(--col-10);
         max-width: var(--col-10);
         
     }
 
     .col-md-11 {
         flex: 0 0 var(--col-11);
+        min-width: var(--col-11);
         max-width: var(--col-11);
         
     }
 
     .col-md-12 {
         flex: 0 0 var(--col-12);
+        min-width: var(--col-12);
         max-width: var(--col-12);
         
     }
@@ -388,152 +340,87 @@ body {
 @media screen and (min-width: 992px){
     .col-lg-1 {
         flex: 0 0 var(--col-1);
+        min-width: var(--col-1);
         max-width: var(--col-1);
        
     }
     
     .col-lg-2 {
         flex: 0 0 var(--col-2);
+        min-width: var(--col-2);
         max-width: var(--col-2);
        
     }
     
     .col-lg-3 {
         flex: 0 0 var(--col-3);
+        min-width: var(--col-3);
         max-width: var(--col-3);
         
     }
     
     .col-lg-4 {
         flex: 0 0 var(--col-4);
+        min-width: var(--col-4);
         max-width: var(--col-4);
         
     }
     
     .col-lg-5{
         flex: 0 0 var(--col-5);
+        min-width: var(--col-5);
         max-width: var(--col-5);
        
     }
     
     .col-lg-6 {
         flex: 0 0 var(--col-6);
+        min-width: var(--col-6);
         max-width: var(--col-6);
         
     }
 
     .col-lg-7 {
         flex: 0 0 var(--col-7);
+        min-width: var(--col-8);
         max-width: var(--col-7);
         
     }
 
     .col-lg-8 {
         flex: 0 0 var(--col-8);
+        min-width: var(--col-8);
         max-width: var(--col-8);
         
     }
 
     .col-lg-9 {
         flex: 0 0 var(--col-9);
+        min-width: var(--col-9);
         max-width: var(--col-9);
         
     }
 
     .col-lg-10 {
         flex: 0 0 var(--col-10);
+        min-width: var(--col-10);
         max-width: var(--col-10);
         
     }
 
     .col-lg-11 {
         flex: 0 0 var(--col-11);
+        min-width: var(--col-11);
         max-width: var(--col-11);
         
     }
 
     .col-lg-12 {
         flex: 0 0 var(--col-12);
+        min-width: var(--col-12);
         max-width: var(--col-12);
         
     }
-}
-
-/* Styles for 'col-xl-...' grid */
-@media screen and (min-width: 1200px){
-    .col-xl-1 {
-        flex: 0 0 var(--col-1);
-        max-width: var(--col-1);
-       
-    }
-    
-    .col-xl-2 {
-        flex: 0 0 var(--col-2);
-        max-width: var(--col-2);
-       
-    }
-    
-    .col-xl-3 {
-        flex: 0 0 var(--col-3);
-        max-width: var(--col-3);
-        
-    }
-    
-    .col-xl-4 {
-        flex: 0 0 var(--col-4);
-        max-width: var(--col-4);
-        
-    }
-    
-    .col-xl-5{
-        flex: 0 0 var(--col-5);
-        max-width: var(--col-5);
-       
-    }
-    
-    .col-xl-6 {
-        flex: 0 0 var(--col-6);
-        max-width: var(--col-6);
-        
-    }
-
-    .col-xl-7 {
-        flex: 0 0 var(--col-7);
-        max-width: var(--col-7);
-        
-    }
-
-    .col-xl-8 {
-        flex: 0 0 var(--col-8);
-        max-width: var(--col-8);
-        
-    }
-
-    .col-xl-9 {
-        flex: 0 0 var(--col-9);
-        max-width: var(--col-9);
-        
-    }
-
-    .col-xl-10 {
-        flex: 0 0 var(--col-10);
-        max-width: var(--col-10);
-        
-    }
-
-    .col-xl-11 {
-        flex: 0 0 var(--col-11);
-        max-width: var(--col-11);
-        
-    }
-
-    .col-xl-12 {
-        flex: 0 0 var(--col-12);
-        max-width: var(--col-12);
-        
-    }
-
-
 }
 
 /*End of Grid System*/
@@ -700,7 +587,19 @@ header > img {
         text-align: center;
         margin-top: 10%;
         justify-content: space-between;
+        background-image: url(../images/holiday.jpg);
+        background-repeat: no-repeat;
+        background-position-x: center;
+        padding: 5%;
     }
+
+    .promo p {
+        color: var(--secondary);
+        font-weight: bold;
+        text-shadow: -1px -1px 5px var(--font-color);
+        
+    }
+
     .product-section {
         text-align:center;
         margin-top:10%;
@@ -716,6 +615,7 @@ header > img {
     }
 
 
+    
 
 /* End of Main Section Styles */
 
@@ -732,10 +632,20 @@ header > img {
     background-color: var(--tertiary-hover);
 }
 
-.promo .cta-section > button {
+.promo .cta-section  button {
     background-color: var(--red);
-    border: 1px solid var(--gray-0);
+    border: none;
     margin-top: 3vh;
+    padding: 2%;
+}
+
+@media screen and (min-width: 768px) {
+     .tablet-view {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        min-width: var(--col-10)
+    }
 }
 
 
@@ -824,6 +734,7 @@ ul.contact  i {
 .social-media i {
     color: var(--secondary);
 }
+
 
 /* End of Footer Styles */
 
@@ -1046,14 +957,14 @@ input:invalid, input:focus:invalid {
 
 .error-page.box.fourhundred::before {
     content: "";
-      background-image: url(../images/error400.jpg);
-      background-size: cover;
-      position: absolute;
-      top: 0px;
-      right: 0px;
-      bottom: 0px;
-      left: 0px;
-      opacity: 0.5;
+    background-image: url(../images/error400.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
 }
 
 .error-page.box.fivehundred::before {
