@@ -774,6 +774,19 @@ ul.contact  i {
     color: var(--secondary);
 }
 
+/*Desktop Footer*/
+@media screen and (min-width: 992px) {
+  footer ul.contact {
+      flex-flow: row nowrap;
+       
+  }
+  footer ul.bottom-nav {
+      flex-flow: row wrap;
+  }
+}
+
+
+
 @media screen and (min-width: 992px) {
     body {
         font-size: 200%;
