@@ -608,13 +608,6 @@ header > img {
         
     }
 
-    .product-section {
-        text-align:center;
-        margin-top:10%;
-        height: 80%;
-        display: flex;
-        flex-flow: column nowrap;
-}
     .cta-section {
         display: flex;
         flex-flow: row wrap;
@@ -623,6 +616,15 @@ header > img {
         margin-bottom: 5%;
     }
     .cta-section a {text-decoration:none;}
+
+    .product-section {
+        text-align:center;
+        margin-top:10%;
+        height: 80%;
+        display: flex;
+        flex-flow: column nowrap;
+}
+
 
 
     
