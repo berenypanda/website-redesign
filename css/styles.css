@@ -584,6 +584,7 @@ header > img {
         font-style: italic;
         text-align: center;
         margin-top: 5%;
+        margin-bottom: 5%;
     }
 
     /*Promo */
@@ -595,14 +596,15 @@ header > img {
         background-image: url(../images/holiday.jpg);
         background-repeat: no-repeat;
         background-position-x: center;
-        padding: 5%;
-        height: 70vh;
+        height: 90vh;
+        width: 100vw
     }
 
     .promo p {
         color: var(--secondary);
         font-weight: bold;
         text-shadow: -1px -1px 5px var(--font-color);
+        margin-top: 5%;
         
     }
 
@@ -615,10 +617,12 @@ header > img {
 }
     .cta-section {
         display: flex;
-        flex-flow: column nowrap;
+        flex-flow: row wrap;
         justify-content: space-around;
         align-items: center;
+        margin-bottom: 5%;
     }
+    .cta-section a {text-decoration:none;}
 
 
     
