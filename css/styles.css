@@ -76,7 +76,7 @@ body {
     position: relative;
     display: flex;
     flex-flow: column wrap;
-    align-items: center;
+    align-items: stretch;
 
 
 }
