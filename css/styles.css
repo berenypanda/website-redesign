@@ -962,6 +962,8 @@ form {
     display: flex;
     flex-flow: column nowrap;
     background-color: var(--primary);
+    margin: 100px;
+    overflow-y:scroll;
     
 }
 fieldset {
