@@ -650,7 +650,11 @@ header > img {
     margin-top: 3vh;
     padding: 2%;
 }
-
+@media screen and (min-width: 320px){
+    .product-section.large-view {
+        display: none;
+    }
+}
 @media screen and (min-width: 768px) {
      .tablet-view {
         display: flex;
@@ -693,7 +697,6 @@ header > img {
     }
     .product-image p {
         align-self: center;
-        font-size: 200%;
         font-weight: bold;
         color: var(--secondary);
     }
